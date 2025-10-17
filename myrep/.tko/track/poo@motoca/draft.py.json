@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-16_16-27-37",
+            "content": "@@ -1939,18 +1939,16 @@\n         \n-el\n if args%5B\n@@ -1983,22 +1983,24 @@\n ak%0A    %0A\n-main()\n+        \n %0A%0A%0A%0A    \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-16_16-54-25",
+            "content": "@@ -1766,18 +1766,16 @@\n o = Moto\n-()\n %0A    whi\n@@ -1995,15 +1995,13 @@\n in()%0A%0A%0A%0A\n-%0A%0A\n      \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-16_21-41-49",
+            "content": "@@ -385,23 +385,16 @@\n a %7C None\n- = None\n %0A       \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-16_21-43-30",
+            "content": "@@ -1662,88 +1662,8 @@\n tr:%0A\n-        person_str = %22(empty)%22 if self.__person is None else str(self.__person)%0A\n     \n@@ -1729,18 +1729,21 @@\n on:%7B\n+self.__\n person\n-_str\n %7D%22%0A \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-16_21-46-11",
+            "content": "@@ -2070,235 +2070,8 @@\n eak%0A\n-        elif args%5B0%5D == %22enter%22:%0A            nome = args%5B1%5D%0A            idade = int(args%5B2%5D)%0A            pessoa = Pessoa(nome, idade)%0A            if not moto.insertPerson(pessoa):%0A                print(%22fail: busy motorcycle%22)%0A\n     \n",
+            "lines": "87"
+        },
+        {
+            "label": "2025-10-16_21-48-37",
+            "content": "@@ -1805,17 +1805,16 @@\n person:%7B\n-(\n person_s\n@@ -1815,17 +1815,16 @@\n rson_str\n-)\n %7D%22%0A    %0A\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-16_21-49-03",
+            "content": "@@ -1808,10 +1808,10 @@\n son:\n-(\n %7B\n+(\n pers\n@@ -1820,10 +1820,10 @@\n _str\n-%7D\n )\n+%7D\n %22%0A  \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-16_21-49-23",
+            "content": "@@ -1804,16 +1804,17 @@\n  person:\n+(\n %7Bperson_\n@@ -1817,16 +1817,17 @@\n son_str%7D\n+)\n %22%0A    %0Ad\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-16_21-49-41",
+            "content": "@@ -1662,86 +1662,8 @@\n tr:%0A\n-        if self.__person is None:%0A            person_str = %22(empty)%22%0A        %0A\n     \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-10-16_21-55-39",
+            "content": "@@ -1731,34 +1731,25 @@\n y)%22%0A        \n-else:%0A    \n+%0A\n         pers\n@@ -1761,12 +1761,52 @@\n r = \n-f%22(%7B\n+%22(empty)%22 if self.__person is None else str(\n self\n@@ -1818,11 +1818,9 @@\n rson\n-%7D)%22\n+)\n %0A   \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-16_21-57-39",
+            "content": "@@ -350,24 +350,8 @@\n self\n-, power: int = 1\n ):%0A \n@@ -421,21 +421,17 @@\n : int = \n-power\n+1\n %0A       \n@@ -2346,78 +2346,8 @@\n e%22)%0A\n-        elif args%5B0%5D == %22init%22:%0A            moto = Moto(int(args%5B1%5D))%0A\n     \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-16_21-59-48",
+            "content": "@@ -2436,141 +2436,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22leave%22:%0A            pessoa = moto.remove()%0A            if pessoa is not None:%0A                print(pessoa)%0A\n     \n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-16_22-01-36",
+            "content": "@@ -2569,58 +2569,8 @@\n oa)%0A\n-            else: print(%22fail: empty motorcycle%22)%0A\n     \n",
+            "lines": "102"
+        },
+        {
+            "label": "2025-10-16_22-02-50",
+            "content": "@@ -2619,78 +2619,8 @@\n e%22)%0A\n-        elif args%5B0%5D == %22buy%22:%0A            moto.buyTime(int(args%5B1%5D))%0A\n     \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-16_22-04-26",
+            "content": "@@ -2689,78 +2689,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22drive%22:%0A            moto.drive(int(args%5B1%5D))%0A\n     \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-10-16_22-05-50",
+            "content": "@@ -1503,16 +1503,13 @@\n son.\n-getAge()\n+__age\n  %3E 1\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-10-16_22-07-56",
+            "content": "@@ -1411,34 +1411,34 @@\n f self.__person \n-is\n+==\n  None:%0A         \n@@ -1584,21 +1584,19 @@\n __time %3C\n- time\n+= 0\n :%0A      \n@@ -1638,118 +1638,20 @@\n ter \n-%7Bself.__time%7D minutes%22)%0A            self.__time = 0%0A        else:%0A            self.__time -= time%0A            \n+X minutes%22)%0A\n     \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-10-16_22-11-36",
+            "content": "@@ -1609,17 +1609,16 @@\n   print(\n-f\n %22fail: t\n@@ -1730,24 +1730,40 @@\n ime -= time%0A\n+                \n %0A    def __s\n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-10-16_22-14-02",
+            "content": "@@ -2847,88 +2847,8 @@\n %5D))%0A\n-        elif args%5B0%5D == %22honk%22:%0A            print(f%22P%7B'e' * moto.getPower()%7Dm%22)%0A\n     \n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-10-16_22-15-55",
+            "content": "class Pessoa:\n    def __init__(self, name: str, age: int):\n        self.__name: str = name\n        self.__age: int = age\n\n    def getName(self) -> str:\n        return self.__name\n    \n    def getAge(self) -> int:\n        return self.__age\n    \n    def __str__(self) -> str:\n        return f\"{self.__name}:{self.__age}\"\n\nclass Moto:\n    def __init__(self, power: int = 1):\n        self.__person: Pessoa | None = None\n        self.__power: int = power\n        self.__time: int = 0\n    \n    def getPerson(self) -> Pessoa | None:\n        return self.__person\n    \n    def getPower(self) -> int:\n        return self.__power\n    \n    def getTime(self) -> int:\n        return self.__time\n    \n    def insertPerson(self, Pessoa: Pessoa) -> bool:\n        if self.__person != None:\n            return False\n        else:\n            self.__person = Pessoa\n            return True\n\n    def remove(self) -> Pessoa | None:\n        if self.__person == None:\n            return None\n        else:\n            Aux: Pessoa = self.__person\n            self.__person = None\n            return Aux\n\n    def honk(self) -> str:\n        honk: str = \"\"\n        for i in range(self.__power):\n            honk += \"e\"\n\n        return honk\n    \n    def buyTime(self, time: int) -> None:\n        self.__time += time\n\n    def drive(self, time: int) -> None:\n        if self.__time == 0:\n            print(\"fail: buy time first\")\n        elif self.__person is None:\n            print(\"fail: empty motorcycle\")\n        elif self.__person.getAge() > 10:\n            print(\"fail: too old to drive\")\n        elif self.__time < time:\n            print(f\"fail: time finished after {self.__time} minutes\")\n            self.__time = 0\n        else:\n            self.__time -= time\n\n    def __str__(self) -> str:\n        if self.__person is None:\n            person_str = \"(empty)\"\n        else:\n            person_str = f\"({self.__person})\"\n        return f\"power:{self.__power}, time:{self.__time}, person:{person_str}\"\n    \ndef main():\n    moto = Moto()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n\n        if args[0] == \"show\":\n            print(moto)\n        elif args[0] == \"end\":\n            break\n        elif args[0] == \"enter\":\n            nome = args[1]\n            idade = int(args[2])\n            pessoa = Pessoa(nome, idade)\n            if not moto.insertPerson(pessoa):\n                print(\"fail: busy motorcycle\")\n        elif args[0] == \"init\":\n            moto = Moto(int(args[1]))\n        elif args[0] == \"leave\":\n            pessoa = moto.remove()\n            if pessoa is not None:\n                print(pessoa)\n            else: print(\"fail: empty motorcycle\")\n        elif args[0] == \"buy\":\n            moto.buyTime(int(args[1]))\n        elif args[0] == \"drive\":\n            moto.drive(int(args[1]))\n        elif args[0] == \"honk\":\n            print(f\"P{'e' * moto.getPower()}m\")\n    \nmain()\n\n\n\n\n\n     ",
+            "lines": "112"
+        }
+    ]
+}

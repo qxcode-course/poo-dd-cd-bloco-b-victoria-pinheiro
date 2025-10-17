@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-12_17-39-39",
+            "content": "@@ -1,8 +1,27 @@\n+@@ -1,398 +0,0 @@%0A-\n class Ca\n@@ -25,17 +25,19 @@\n  Camisa:\n-%0A\n+%250A\n     def \n@@ -51,17 +51,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -89,12 +89,20 @@\n r = \n-%22%22%0A%0A\n+%2522%2522%250A%250A\n     \n@@ -127,15 +127,19 @@\n f) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -167,14 +167,18 @@\n anho\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     \n@@ -205,356 +205,23 @@\n  val\n-ue: str):%0A        if value == %22PP%22:%0A            print(%22PP%22)%0A        elif value == %22P%22:%0A            print(%22P%22)%0A        elif value == %22M%22:%0A            print(%22M%22)%0A        elif value == %22G%22:%0A            print(%22G%22)%0A        elif value == %22GG%22:%0A            print(%22GG%22)%0A        else:%0A            print(%22fail: os tamanhos dispon%C3%ADveis s%C3%A3o PP, P, M, G, GG%22)%0A%0A\n+or: str):%250A%250A\n roup\n@@ -231,18 +231,22 @@\n  Roupa()\n-%0A%0A\n+%250A%250A\n while ro\n@@ -269,12 +269,18 @@\n  == \n-%22%22:%0A\n+%2522%2522:%250A\n     \n@@ -285,17 +285,19 @@\n   print(\n-%22\n+%2522\n Digite s\n@@ -319,11 +319,15 @@\n oupa\n-%22)%0A\n+%2522)%250A\n     \n@@ -343,17 +343,19 @@\n  input()\n-%0A\n+%250A\n     roup\n@@ -379,17 +379,23 @@\n nho)\n-%0A%0A\n+%250A%250A\n print(\n-%22\n+%2522\n Para\n@@ -407,9 +407,14 @@\n  voc\n-%C3%AA\n+%25C3%25AA\n  com\n@@ -439,9 +439,11 @@\n anho\n-%22\n+%2522\n , ro\n@@ -463,10 +463,15 @@\n o())\n-%0A%0A\n+%250A%250A\n     \n+%0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-10-12_18-06-37",
+            "content": "@@ -518,21 +518,20 @@\n roupa = \n-Camis\n+Roup\n a()%0A%0Awhi\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-12_18-07-04",
+            "content": "@@ -514,21 +514,8 @@\n %22)%0A%0A\n-def main():%0A%0A\n roup\n@@ -729,15 +729,8 @@\n ))%0A%0A\n-main()%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-12_18-21-36",
+            "content": "@@ -184,60 +184,99 @@\n     \n-tamanhos_validos \n+if value =\n = \n-%5B\n %22PP%22\n-, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D\n+:%0A            print(%22PP%22)%0A        elif value == %22P%22:%0A            print(%22P%22)\n %0A   \n@@ -272,32 +272,34 @@\n nt(%22P%22)%0A        \n+el\n if value in tama\n@@ -295,63 +295,140 @@\n lue \n-in tamanhos_validos:%0A            self.__tamanho = value\n+== %22M%22:%0A            print(%22M%22)%0A        elif value == %22G%22:%0A            print(%22G%22)%0A        elif value == %22GG%22:%0A            print(%22GG%22)\n %0A   \n@@ -522,20 +522,17 @@\n main():%0A\n-    \n+%0A\n roupa = \n@@ -540,20 +540,17 @@\n amisa()%0A\n-    \n+%0A\n while ro\n@@ -573,28 +573,24 @@\n  == %22%22:%0A    \n- \n-   \n print(%22Digit\n@@ -614,20 +614,16 @@\n roupa%22)%0A\n-    \n     tama\n@@ -640,20 +640,16 @@\n t()%0A    \n- \n-   \n roupa.se\n@@ -666,20 +666,17 @@\n amanho)%0A\n-    \n+%0A\n print(%22P\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-12_18-44-35",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho : str = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n    \n    def setTamanho(self, value: str):\n        tamanhos_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        if value in tamanhos_validos:\n            self.__tamanho = value\n        else:\n            print(\"fail: os tamanhos dispon\u00edveis s\u00e3o PP, P, M, G, GG\")\n\ndef main():\n    roupa = Camisa()\n    while roupa.getTamanho() == \"\":\n        print(\"Digite seu tamanho de roupa\")\n        tamanho = input()\n        roupa.setTamanho(tamanho)\n    print(\"Parabens, voc\u00ea comprou uma roupa tamanho\", roupa.getTamanho())\n\nmain()\n    ",
+            "lines": "24"
+        }
+    ]
+}
