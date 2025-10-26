@@ -9,6 +9,8 @@ sources:
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /home/victoria/Documentos/Bloco2/myrep/.tko/cache/poo.md
   cache_timestamp: '2025-10-25 12:05:39'
+  cache_path: /home/victoria/Documentos/bloco B PO/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-16 21:55:32'
   filters:
   - acesso
   - simples
@@ -22,6 +24,7 @@ tasks:
   poo@roupa: '{rate:100, human:_amigo, iagen:_copilot, alone:7, study:90}'
   poo@relogio: '{rate:100, human:_amigo, alone:7, study:50}'
   poo@motoca: '{rate:100}'
+  poo@motoca: '{rate:100, human:_amigo, alone:6, study:120}'
 flags:
   quests: 0
   tracks: 0
@@ -30,3 +33,4 @@ flags:
   xray: 0
 lang: py
 selected: poo@motoca
+selected: poo@grafite

@@ -15,3 +15,37 @@
 2025-10-16 16:27:46, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
 2025-10-16 16:27:47, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
 2025-10-16 16:38:33, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-16 16:54:23, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-16 16:54:25, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:84
+2025-10-16 21:36:55, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-16 21:36:55, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-16 21:41:49, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:86
+2025-10-16 21:43:30, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:86
+2025-10-16 21:46:11, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:87
+2025-10-16 21:48:37, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:93
+2025-10-16 21:48:42, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6
+2025-10-16 21:49:03, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:93
+2025-10-16 21:49:23, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:93
+2025-10-16 21:49:41, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:93
+2025-10-16 21:54:08, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-16 21:55:37, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-16 21:55:39, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:96
+2025-10-16 21:57:39, EXEC, v:1, k:poo@motoca, mode:FULL, rate:20, size:96
+2025-10-16 21:59:48, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33, size:98
+2025-10-16 22:01:36, EXEC, v:1, k:poo@motoca, mode:FULL, rate:40, size:102
+2025-10-16 22:02:50, EXEC, v:1, k:poo@motoca, mode:FULL, rate:53, size:103
+2025-10-16 22:04:26, EXEC, v:1, k:poo@motoca, mode:FULL, rate:60, size:105
+2025-10-16 22:05:50, EXEC, v:1, k:poo@motoca, mode:FULL, rate:73, size:107
+2025-10-16 22:07:56, EXEC, v:1, k:poo@motoca, mode:FULL, rate:80, size:107
+2025-10-16 22:11:36, EXEC, v:1, k:poo@motoca, mode:FULL, rate:86, size:110
+2025-10-16 22:14:02, EXEC, v:1, k:poo@motoca, mode:FULL, rate:93, size:110
+2025-10-16 22:15:55, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:112
+2025-10-16 22:20:26, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-16 22:21:50, SELF, v:1, k:poo@motoca, rate:100, human:_amigo, alone:6, study:120
+2025-10-16 22:22:17, MOVE, v:1, k:poo@grafite, mode:DOWN
+2025-10-16 22:22:19, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-16 23:08:50, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0, size:0
+2025-10-16 23:08:53, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0
+2025-10-16 23:08:54, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0
+2025-10-16 23:08:54, EXEC, v:1, k:poo@grafite, mode:FULL, rate:0
+2025-10-16 23:09:15, MOVE, v:1, k:poo@grafite, mode:BACK

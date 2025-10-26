@@ -46,6 +46,7 @@ class Moto:
 
     def honk(self) -> str:
         return "P" + "e" * self.__power + "m"
+
     
     def buyTime(self, time: int) -> None:
         self.__time += time
@@ -65,7 +66,7 @@ class Moto:
             self.__time = 0
         else:
             self.__time -= time
-    
+
     def __str__(self) -> str:
         if self.__person is None:
             person_str = "(empty)"
@@ -105,7 +106,5 @@ def main():
             moto = Moto(power)
 
 main()
-
-
 
      
