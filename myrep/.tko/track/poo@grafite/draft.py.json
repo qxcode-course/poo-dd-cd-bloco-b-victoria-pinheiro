@@ -2,8 +2,88 @@
     "patches": [
         {
             "label": "2025-10-16_23-08-50",
-            "content": "",
+            "content": "@@ -1,828 +0,0 @@\n-class Lead:%0A    def __init__(self, thickness: int, hardness: str, size: int):%0A        self.__thickness: int = thickness%0A        self.__hardness: str = hardness%0A        self.__size: int = size%0A%0A    def getHardness(self) -%3E str:%0A        return self.__hardness%0A    %0A    def getSize(self) -%3E int:%0A        return self.__size%0A    %0A    def getThicness(self) -%3E int:%0A        return self.__thickness%0A%0Aclass Pencil:%0A    def _init__(self, thickness: int):%0A        self.__tip: Lead %7C None%0A        self.__thickness: int = thickness%0A%0A    def getTip(self) -%3E Lead %7C None:%0A        return self.__tip%0A    %0A    def getThickness(self) -%3E int:%0A        return self.__thickness%0A%0A    def hasGrafite(self) -%3E bool:%0A        if self.__tip != None:%0A            return True%0A        else:%0A            self.__tip = Pencil%0A%0A    def insert(self, lead: lead) -%3E \n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-26_18-35-09",
+            "content": "@@ -777,20 +777,22 @@\n __tip = \n-None\n+Pencil\n %0A%0A    de\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-26_18-51-10",
+            "content": "@@ -718,44 +718,8 @@\n ne:%0A\n-            self.__tip = self.__tip%0A\n     \n@@ -808,458 +808,19 @@\n lf, \n-Lead: Lead) -%3E bool:%0A        if self.__Pencil != None:%0A            return False%0A        else:%0A            self.__pencil = Lead%0A            return True%0A        %0A    def __str__(self) -%3E str:%0A        return f%22calibre:%7Bself.__pencil%7D, grafite:%7Bself.__lead%7D%22%0A    %0A    def remove(self) -%3E Lead %7C None:%0A        if self.__tip == None:%0A            return None%0A        else:%0A            Aux: Lead = self.__tip%0A            self.__tip = None%0A            return Aux%0A\n+lead: lead) -%3E \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-26_19-55-23",
+            "content": "@@ -39,20 +39,18 @@\n ckness: \n-floa\n+in\n t, hardn\n@@ -89,36 +89,34 @@\n lf.__thickness: \n-floa\n+in\n t = thickness  #\n@@ -112,26 +112,16 @@\n hickness\n-  #calibre\n %0A       \n@@ -156,21 +156,8 @@\n ness\n-      #dureza\n %0A   \n@@ -188,100 +188,8 @@\n size\n-              #tamanho%0A%0A    def getThickness(self) -%3E float:%0A        return self.__thickness\n %0A%0A  \n@@ -330,301 +330,19 @@\n def \n-usagePerSheet(self) -%3E int:%0A        if self.__hardness == %22HB%22:%0A            return 1%0A        if self.__hardness == %222B%22:%0A            return 2%0A        if self.__hardness == %224B%22:%0A            return 4%0A        if self.__hardness == %226B%22:%0A            return 6%0A        return 0%0A    %0A    def __str__\n+getThicness\n (sel\n@@ -339,35 +339,35 @@\n icness(self) -%3E \n-str\n+int\n :%0A        return\n@@ -371,12 +371,8 @@\n urn \n-f%22%5B%7B\n self\n@@ -387,43 +387,8 @@\n ness\n-%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%5D%22\n %0A%0Acl\n@@ -399,33 +399,32 @@\n Pencil:%0A    def \n-_\n _init__(self, th\n@@ -432,20 +432,18 @@\n ckness: \n-floa\n+in\n t):%0A    \n@@ -462,68 +462,19 @@\n ip: \n-None = None              #grafite atual (come%C3%A7a sem grafite)\n+Lead %7C None\n %0A   \n@@ -496,20 +496,18 @@\n ckness: \n-floa\n+in\n t = thic\n@@ -515,18 +515,8 @@\n ness\n-  #calibre\n %0A%0A  \n@@ -615,12 +615,10 @@\n  -%3E \n-floa\n+in\n t:%0A \n@@ -706,32 +706,68 @@\n .__tip != None:%0A\n+            self.__tip = self.__tip%0A\n             retu\n@@ -800,27 +800,32 @@\n         \n-return Fals\n+self.__tip = Non\n e%0A%0A    d\n@@ -840,23 +840,20 @@\n t(self, \n-grafite\n+Lead\n : Lead) \n@@ -883,306 +883,108 @@\n f.__\n-hasGrafite(): #verifica se ja existe um grafite na lapiseira%0A            print(%22fail: ja existe grafite%22)%0A            return False%0A        elif grafite.getThickness() != self.__thickness:%0A            print(%22fail: calibre incompativel%22)%0A            return False%0A        self.__tip = grafite%0A\n+Pencil != None:%0A            return False%0A        else:%0A            self.__pencil = Lead%0A      \n       \n-  \n retu\n@@ -991,24 +991,28 @@\n rn True%0A    \n+    \n %0A    def rem\n@@ -1012,14 +1012,15 @@\n def \n-remove\n+__str__\n (sel\n@@ -1029,112 +1029,21 @@\n  -%3E \n-Lead %7C None:%0A        if self.hasGrafite == None:%0A            print(%22fail: nao existe grafite%22)%0A \n+str:%0A\n         \n    r\n@@ -1042,174 +1042,49 @@\n     \n-   \n return \n-None%0A        else:%0A            Aux: Lead = self.__tip%0A            self.__tip = None%0A            return Aux%0A        %0A    def writePage(self):%0A       \n+f%22calibre:%7Bself.__pencil%7D,\n  grafite\n  = s\n@@ -1083,996 +1083,219 @@\n fite\n- = \n+:%7B\n self.__\n-tip%0A        gasto = grafite.usagePerSheet()%0A        tamanho_atual = grafite.getSize()%0A        if tamanho_atual %3C= 10:%0A            print(%22fail: tamanho insuficiente%22)%0A            return%0A        if grafite.getSize %3C 10:%0A            print(%22fail: tamanho insuficiente%22)%0A        novo_tamanho = tamanho_atual - gasto%0A        if novo_tamanho %3C 10:%0A            grafite.setSize(10)%0A            print(%22fail: folha incompleta%22)%0A            return%0A        grafite.setSize(novo_tamanho)%0A%0A    def __str__(self) -%3E str:%0A        if self.hasGrafite():%0A            return f%22calibre:%7Bself.__thickness%7D, grafite:%7Bself.__tip%7D%22%0A        else:%0A            return f%22calibre:%7Bself.__thickness%7D, grafite:\n+lead%7D%22%0A    %0A    def remove(self) -%3E Lead %7C None:%0A        if self.__tip == None:%0A            return None%0A        else:%0A            Aux: Lead = self.__tip%0A            self.__tip = \n None\n-%22 \n %0A    \n-%0Adef main():%0A    pencil = Pencil%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split()%0A%0A        if args%5B0%5D == %22show%22:%0A            print(pencil)%0A        elif args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22%22%0A%0A        %0A%0A        \n+        return Aux%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-26_21-40-16",
+            "content": "@@ -2931,53 +2931,9 @@\n == %22\n-init%22:%0A            thickness = float(args%5B1%5D)\n+%22\n %0A%0A  \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-10-26_21-42-19",
+            "content": "@@ -2976,24 +2976,8 @@\n %5B1%5D)\n-%0A        %0Amain()\n %0A%0A  \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-10-26_21-43-55",
+            "content": "@@ -2686,18 +2686,16 @@\n = Pencil\n-()\n %0A    whi\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_21-44-12",
+            "content": "@@ -2681,30 +2681,19 @@\n ncil\n-:\n+ =\n  Pencil\n- = None %7C None\n+()\n %0A   \n@@ -2845,127 +2845,20 @@\n     \n-if pencil != None:%0A                print(pencil)%0A            else:%0A                print(%22fail: lapiseira nao iniciada%22\n+print(pencil\n )%0A  \n@@ -2936,16 +2936,16 @@\n %22init%22:%0A\n+\n         \n@@ -2979,47 +2979,8 @@\n 1%5D)%0A\n-            pencil = Pencil(thickness)%0A\n     \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_21-49-10",
+            "content": "@@ -436,75 +436,8 @@\n ize%0A\n-    %0A    def setSize(self, size: int):%0A        self.__size = size%0A%0A\n     \n@@ -1337,32 +1337,34 @@\n         if self.\n+__\n hasGrafite(): #v\n@@ -1714,12 +1714,8 @@\n  if \n-not \n self\n@@ -1717,34 +1717,40 @@\n  self.hasGrafite\n-()\n+ == None\n :%0A            pr\n@@ -2177,18 +2177,16 @@\n .getSize\n-()\n  %3C 10:%0A \n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-10-26_21-54-00",
+            "content": "@@ -3201,469 +3201,8 @@\n ss)%0A\n-        elif args%5B0%5D == %22insert%22:%0A            if pencil is None:%0A                print(%22fail: lapiseira nao iniciada%22)%0A                continue%0A            thickness = float(args%5B1%5D)%0A            hardness = args%5B2%5D%0A            size = int(args%5B3%5D)%0A            grafite = Lead(thickness, hardness, size)%0A            pencil.insert(grafite)%0A        elif args%5B0%5D == %22remove%22:%0A            pencil.remove()%0A        elif args%5B0%5D == %22write%22:%0A            pencil.writePage()%0A\n     \n",
+            "lines": "114"
+        },
+        {
+            "label": "2025-10-26_22-01-10",
+            "content": "@@ -2746,19 +2746,30 @@\n ncil\n- =\n+:\n  Pencil\n-()\n+ = None %7C None\n %0A   \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-26_22-01-33",
+            "content": "@@ -2746,30 +2746,19 @@\n ncil\n-:\n+ =\n  Pencil\n- %7C None = None\n+()\n %0A   \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-26_22-02-18",
+            "content": "@@ -2587,33 +2587,32 @@\n eturn f%22calibre:\n- \n %7Bself.__thicknes\n@@ -2680,17 +2680,16 @@\n calibre:\n- \n %7Bself.__\n@@ -2713,11 +2713,11 @@\n te:N\n-ull\n+one\n %22 %0A \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-26_22-02-58",
+            "content": "@@ -2710,18 +2710,17 @@\n grafite:\n- n\n+N\n ull%22 %0A  \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-26_22-03-07",
+            "content": "@@ -2624,17 +2624,16 @@\n grafite:\n- \n %7Bself.__\n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-26_22-03-26",
+            "content": "@@ -2008,107 +2008,8 @@\n f):%0A\n-        if not self.hasGrafite():%0A            print(%22fail: nao existe grafite%22)%0A            return%0A\n     \n@@ -2213,17 +2213,99 @@\n   return\n- \n+%0A        if grafite.getSize() %3C 10:%0A            print(%22fail: tamanho insuficiente%22)\n %0A       \n",
+            "lines": "127"
+        },
+        {
+            "label": "2025-10-26_22-09-57",
+            "content": "class Lead:\n    def __init__(self, thickness: float, hardness: str, size: int):\n        self.__thickness: float = thickness  #calibre\n        self.__hardness: str = hardness      #dureza\n        self.__size: int = size              #tamanho\n\n    def getThickness(self) -> float:\n        return self.__thickness\n\n    def getHardness(self) -> str:\n        return self.__hardness\n    \n    def getSize(self) -> int:\n        return self.__size\n    \n    def setSize(self, size: int):\n        self.__size = size\n\n    \n    def usagePerSheet(self) -> int:\n        if self.__hardness == \"HB\":\n            return 1\n        if self.__hardness == \"2B\":\n            return 2\n        if self.__hardness == \"4B\":\n            return 4\n        if self.__hardness == \"6B\":\n            return 6\n        return 0\n    \n    def __str__(self) -> str:\n        return f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\"\n\nclass Pencil:\n    def __init__(self, thickness: float):\n        self.__tip: None = None              #grafite atual (come\u00e7a sem grafite)\n        self.__thickness: float = thickness  #calibre\n\n    def getTip(self) -> Lead | None:\n        return self.__tip\n    \n    def getThickness(self) -> float:\n        return self.__thickness\n\n    def hasGrafite(self) -> bool:\n        if self.__tip != None:\n            return True\n        else:\n            return False\n\n    def insert(self, grafite: Lead) -> bool:\n        if self.hasGrafite(): #verifica se ja existe um grafite na lapiseira\n            print(\"fail: ja existe grafite\")\n            return False\n        elif grafite.getThickness() != self.__thickness:\n            print(\"fail: calibre incompativel\")\n            return False\n        self.__tip = grafite\n        return True\n    \n    def remove(self) -> Lead | None:\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return None\n        else:\n            Aux: Lead = self.__tip\n            self.__tip = None\n            return Aux\n        \n    def writePage(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite\")\n            return\n        grafite = self.__tip\n        gasto = grafite.usagePerSheet()\n        tamanho_atual = grafite.getSize()\n        if tamanho_atual <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return \n        novo_tamanho = tamanho_atual - gasto\n        if novo_tamanho < 10:\n            grafite.setSize(10)\n            print(\"fail: folha incompleta\")\n            return\n        grafite.setSize(novo_tamanho)\n\n    def __str__(self) -> str:\n        if self.hasGrafite():\n            return f\"calibre: {self.__thickness}, grafite: {self.__tip}\"\n        else:\n            return f\"calibre: {self.__thickness}, grafite: null\" \n    \ndef main():\n    pencil: Pencil | None = None\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split()\n\n        if args[0] == \"show\":\n            if pencil != None:\n                print(pencil)\n            else:\n                print(\"fail: lapiseira nao iniciada\")\n        elif args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            thickness = float(args[1])\n            pencil = Pencil(thickness)\n        elif args[0] == \"insert\":\n            if pencil is None:\n                print(\"fail: lapiseira nao iniciada\")\n                continue\n            thickness = float(args[1])\n            hardness = args[2]\n            size = int(args[3])\n            grafite = Lead(thickness, hardness, size)\n            pencil.insert(grafite)\n        elif args[0] == \"remove\":\n            pencil.remove()\n        elif args[0] == \"write\":\n            pencil.writePage()\n        \nmain()\n\n        \n\n        ",
+            "lines": "128"
         }
     ]
 }
