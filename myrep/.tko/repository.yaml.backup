@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /home/victoria/Documentos/Bloco2/poo-dd-cd-bloco-b-victoria-pinheiro/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-26 17:10:50'
+  cache_timestamp: '2025-10-27 14:53:01'
   filters:
   - acesso
   - simples
@@ -23,6 +23,7 @@ tasks:
   poo@relogio: '{rate:100, human:_amigo, alone:7, study:50}'
   poo@motoca: '{rate:100, human:_amigo, alone:6, study:200}'
   poo@grafite: '{rate:100, human:_amigo, guide:_video, alone:7, study:160}'
+  poo@motouber: '{rate:100, human:_amigo, alone:8, study:240}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +31,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@grafite
+selected: poo@motouber
